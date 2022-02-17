@@ -1,10 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Links from './components/Links';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
-    <h1>HELLO WORLD</h1>
+    <div className='container p-4'>
+      <div className="row justify-content-center">
+        <Links />
+      </div>
+      <ToastContainer />
+    </div>
   );
 }
 
